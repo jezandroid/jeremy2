@@ -78,6 +78,7 @@ function progress(timeleft, timetotal, $element) {
     }
     else
     {
+        navigator.vibrate([500, 500, 1000, 250, 750, 1000]);
         navigator.notification.alert(
     'Time up!',  // message
     alertDismissed,         // callback
